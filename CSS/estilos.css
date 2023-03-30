@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,300;1,800&family=Roboto:ital,wght@0,100;0,300;1,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    *background: linear-gradient(rgba(29, 1, 24, 0.952), rgba(61, 8, 185, 0.418)), url(../img/bgc.jpeg);
+}
+
+.navbar{
+    /* background-color: #ad0cf862; */
+    background: linear-gradient(rgba(216, 30, 185, 0.479), rgba(243, 132, 173, 0.479)), url(../img/bgc.jpeg);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 110px;
+    height: 100px;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: rgb(111, 0, 255);
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: white;
+}
+
+/*Se ocultara barra de menu mientras se visualice en modo PC*/
+.navbar .menu-bar{
+    display: none;
+}
+
+.navbar .shopping{
+    grid-column: 8 / 9;
+}
+
+/*Main*/
+
+/*Presentacion*/
+.hero{
+    height: 80vh;
+    background: linear-gradient(rgba(121, 16, 103, 0.479), rgba(36, 4, 16, 0.6)),
+    url(../img/bgbody.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.hero .info-content{
+    grid-column: 9 / 10;
+    grid-row: 2/ 7;
+    color: rgb(111, 184, 206);
+}
+
+.hero h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+    color: rgb(245, 89, 219);
+}
+.hero h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 350;
+}
+
+.hero p {
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(248, 248, 248, 0.808);
+}
+
+/*Formato para boton*/
+.hero .btn {
+    font-size: 2em;
+    background: linear-gradient(rgba(231, 78, 206, 0.548), rgba(91, 97, 79, 0.932)),
+    url(../img/buttonbg.jpg);
+    color: rgb(37, 79, 218);
+    padding: 10px 20px;
+    border: 1px solid rgba(98, 243, 199, 0.541);
+    border-radius: 30px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    cursor: pointer;
+}
+
+.hero .btn:hover{
+    background: 
+    url(../img/buttonbg.jpg);
+    color: rgb(253, 253, 253);
+    }
+
+/*Seccion de Footer*/
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(rgba(211, 107, 194, 0.479), rgba(33, 201, 42, 0.705)), url(../img/buttonbg.jpg);
+    grid-template-areas: 'pay-online social-network';
+}
+
+.footer .pay-online{
+    grid-template-areas: pay-online;
+    display: flex;
+    justify-content: center;
+    color: rgb(5, 34, 197);
+    
+}
+
+.footer .pay-online .fa-brands {
+    font-size: 1.5em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    display: flex;
+    justify-content: center;
+    color: rgb(88, 5, 105);
+}
+
+.footer .social-network .fa-brands{
+    font-size: 1.5em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer .social-network .fa-brands:hover{
+    color: white;
+}
+
+.footer .pay-online .fa-brands:hover{
+    color: white;
+}
